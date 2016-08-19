@@ -2,7 +2,7 @@ require 'csv'
 
 def parse_file(file_location)
 	job_order_count = {}
-	job_orders_past_due {}
+	job_orders_past_due = {}
 	CSV.foreach(file_location, :headers => true) do |row|
 		location = row[1]
 		if job_order_count.key?(location)
@@ -21,7 +21,7 @@ def parse_file(file_location)
 		end
 	end
 	locations_hash = {}
-	job_orders_count.each do |k,v|
+	job_order_count.each do |k,v|
 		locations_hash[:k] = {}
 		locations_hash[:k][:job_orders_count] = v
 	end
