@@ -16,7 +16,7 @@ Job Order,Location,Due Date,IsPastDue
 30852335,Yosemite,9/15/16,0
 30854384,Yosemite,9/16/16,1
 30854385,Sacramento,9/17/16,0
-30854408,,9/18/16,1
+30854408,San Jose,9/18/16,1
 30854506,San Ramon,9/19/16,0
 30854507,Truckee,9/20/16,1
 30854511,Truckee,9/21/16,0
