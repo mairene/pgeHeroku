@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20160819211506) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "summaries", force: true do |t|
     t.string  "location"
     t.integer "number_of_job_orders"
